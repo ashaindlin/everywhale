@@ -1,0 +1,12 @@
+{
+    "name": "everywhale",
+    "description": "a twitterbot about whales",
+    "author": "Alex Shaindlin <ashaindlin@gmail.com>",
+    "dependencies": {
+        "twit": "1.1.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ashaindlin/everywhale.git"
+    }
+}
