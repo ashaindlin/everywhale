@@ -1,6 +1,15 @@
 # These are the secret API keys!
 config.js
 
+# Project-specific word lists
+resources
+
+# WordNet database
+wordnet
+
+# Screenshots
+screens
+
 # Everything below this line created by http://www.gitignore.io
 
 ### Node ###
