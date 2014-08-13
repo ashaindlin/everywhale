@@ -1,8 +1,5 @@
 # These are the secret API keys!
-config.js
-
-# Project-specific word lists
-resources
+setup_env.sh
 
 # WordNet database
 wordnet
