@@ -1,2 +1,1 @@
-web: node redirect.js
-worker: node everywhale.js
+web: node everywhale.js

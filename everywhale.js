@@ -1,7 +1,15 @@
 var fs = require('fs');
+var http = require('http');
 var Twit = require('twit');
 var config = require('./config.js');
 var T = new Twit(config.twit);
+
+var server = http.createServer(function(request, response) {
+    response.writeHead(302, {
+        'Location': 'http://twitter.com/everywhale'
+    });
+    response.end();
+});
 
 function tweet() {
     fs.readFile('./resources/unused.txt', function(err, data) {
@@ -25,6 +33,8 @@ function tweet() {
         });
     });
 }
+
+server.listen(process.env.PORT);
 
 tweet();
 
