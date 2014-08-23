@@ -16,9 +16,10 @@ function tweet() {
         if (err) throw err;
         var items = data.toString().split('\n');
         if (items.length == 0 || (items.length == 1 && items[0] == '')) {
-            T.post('statuses/update', { status: 'completed. i think this project went very whale!' }, function(err, data, res)
-            console.log("completed!");
-            process.exit(0);
+            T.post('statuses/update', { status: 'completed. i think this project went very whale!' }, function(err, data, res) {
+                console.log("completed!");
+                process.exit(0);
+            });
         }
         var index = Math.floor(Math.random()*items.length);
         var item = items[index];
