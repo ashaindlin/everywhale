@@ -3,7 +3,8 @@
     "description": "a twitterbot about whales",
     "author": "Alex Shaindlin <ashaindlin@gmail.com>",
     "dependencies": {
-        "twit": "1.1.x"
+        "twit": "1.1.x",
+        "aws-sdk": "^2.0.15"
     },
     "repository": {
         "type": "git",
